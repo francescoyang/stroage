@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/sysButton">
+        <file alias="skin_button">img/sysButton/skin_button.png</file>
+        <file alias="main_menu">img/sysButton/main_menu.png</file>
+        <file alias="min_button">img/sysButton/min_button.png</file>
+        <file alias="max_button">img/sysButton/max_button.png</file>
+        <file alias="close_button">img/sysButton/close_button.png</file>
+        <file alias="close">img/sysButton/close.png</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file alias="safe">img/safe.png</file>
+        <file>img/heart.svg</file>
+        <file>img/storage.svg</file>
+        <file>img/storage.ico</file>
+    </qresource>  
+</RCC>

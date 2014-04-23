@@ -1,0 +1,160 @@
+/*  青-蓝  */
+/*
+QFrame {
+  background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.960396, y2:0.949, stop:0 rgba(88, 245, 227, 255), stop:0.0940594 rgba(132, 246, 239, 255), stop:0.143564 rgba(130, 246, 233, 255), stop:0.222772 rgba(158, 249, 234, 255), stop:0.25 rgba(144, 248, 248, 255), stop:0.292079 rgba(173, 251, 252, 255), stop:0.326733 rgba(156, 248, 241, 255), stop:0.475248 rgba(158, 230, 226, 255), stop:0.554455 rgba(135, 251, 242, 255), stop:0.628713 rgba(139, 226, 226, 255), stop:0.805 rgba(150, 245, 242, 255), stop:0.866337 rgba(186, 254, 243, 255), stop:0.915842 rgba(188, 254, 250, 255), stop:1 rgba(190, 255, 248, 255));
+   color: rgb(0, 0, 0);
+   font: 75 11pt "Bitstream Charter";
+
+}
+*/
+
+
+QMainWindow,QDialog,QTableView{
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                       stop: 0 #8FBFEF,stop: 0.2 #589FE7, stop: 0.4 #2080DF,stop: 0.6 #1860A7,stop: 0.8 #104070,stop: 1.0 #082038);
+}
+
+
+
+QMenu, QMenuBar,QMessageBox,QProgressBar{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+					stop: 0 #8FBFEF,stop: 1.0 #8FBFEF);
+    border: 1px solid white;
+	border-radius:5px;				/* 圆角优化 值 = 弧度 */
+}
+
+
+ QMenu::item:selected {
+
+	 border-radius:5px;				/* 圆角优化 值 = 弧度 */
+	 border: 1px solid white;
+     border-width:1px;
+     border-color: #516589;
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #1E293A,
+                                 stop: 1.0 #2C547E);
+     color:#E6FFFF;
+ }
+
+
+QMenu::icon:checked { /* appearance of a 'checked' icon */
+     background: gray;
+     border: 1px inset gray;
+     position: absolute;
+     top: 1px;
+     right: 1px;
+     bottom: 1px;
+     left: 1px;
+ }
+
+ QMenu::separator {
+     height: 1px;
+     background: #1D99A9;
+     /*margin-left: 10px;*/
+     /*margin-right: 5px;*/
+ }
+
+ QMenu::indicator {
+     width: 13px;
+     height: 13px;
+ }
+
+ /* non-exclusive indicator = check box style indicator (see QActionGroup::setExclusive) */
+ QMenu::indicator:non-exclusive:unchecked {
+     image: url(qss/checkbox_unchecked.png);
+ }
+
+ QMenu::indicator:non-exclusive:unchecked:selected {
+     image: url(qss/checkbox_unchecked_hover.png);
+ }
+
+ QMenu::indicator:non-exclusive:checked {
+     image: url(qss/checkbox_checked.png);
+ }
+
+ QMenu::indicator:non-exclusive:checked:selected {
+     image: url(qss/checkbox_checked_hover.png);
+ }
+
+ /* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
+ QMenu::indicator:exclusive:unchecked {
+     image: url(qss/radiobutton_unchecked.png);
+ }
+
+ QMenu::indicator:exclusive:unchecked:selected {
+     image: url(qss/radiobutton_unchecked_hover.png);
+ }
+
+
+QLabel{
+background:transparent;
+}
+
+
+
+QDialog QPushButton,QDialog QToolButton{
+	min-width:30px;
+	min-height:23px;
+}
+QPushButton{
+	border-style: outset;
+	border-width: 1px;
+
+    border: 2px solid white;		/* 边框 */
+/*	border:groove gray;*/
+	border-radius:10px;				/* 圆角优化 值 = 弧度 */
+	padding:0px 0px;				/* btn 边界大小		*/
+}
+
+QPushButton{ color: back;}
+
+QPushButton::hover{background-color:green;}		/*  光标在btn 时为grenn */
+QPushButton::pressed{ background:qlineargradient(x1:0,y1:0.5,x2:1,y2:0.5,
+		stop:0 green,stop:0.5 cyan stop: 1 darkcyan);}
+
+
+QLineEdit{
+	border-style: outset;
+	border-width: 1px;
+
+    border: 2px solid white;		/* 边框 */
+/*	border:groove gray;*/
+	border-radius:10px;				/* 圆角优化 值 = 弧度 */
+	padding:1px 1px;				/* btn 边界大小		*/
+
+}
+
+DailForm QLineEdit#phoneLineEdt{
+	font-size:36px;
+	font-weight: bold;
+}
+
+QComboBox{
+color: rgb(0, 0, 0);
+font: 75 11pt "Bitstream Charter";
+	  border-width: 2px;
+	  background-color: rgb(170, 170, 0);
+	  border-color: rgb(255, 255, 255);
+	  border-style: solid;
+	  border-radius: 5;
+}
+QComboBox:hover{
+
+		  }
+
+QComboBox QAbstractItemView {
+border: 2px solid #32435E;
+		selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+				stop: 0 #506B79,stop: 1.0 #0D95A6);
+background: #589FE7;
+}
+QDoubleSpinBox {
+color: rgb(0, 0, 0);
+font: 75 11pt "Bitstream Charter";
+	  border-width: 2px;
+	  background-color: rgb(170, 170, 0);
+	  border-color: rgb(255, 255, 255);
+	  border-style: solid;
+	  border-radius: 5;
+
+}

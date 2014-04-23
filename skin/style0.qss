@@ -1,0 +1,175 @@
+/* 黄-绿 */
+/*{
+	font-size:13px;
+color:back;
+	  font-family:"宋体";
+}*/
+
+CallWidget QLineEdit#telEdt
+{
+	font-size:24px;
+
+}
+
+
+QMainWindow,QDialog,QTableView,QFileDialog,QListView{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+					stop: 0 #BFEF8F,stop: 0.2 #9FE758, stop: 0.4 #80DF20,stop: 0.6 #60A718,stop: 0.8 #407010,stop: 1.0  #203808);
+}
+
+
+QMenu, QMenuBar,QMessageBox,QProgressBar{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+					stop: 0 #BFEF8F,stop: 1.0 #BFEF8F);
+    border: 1px solid white;
+	border-radius:5px;				/* 圆角优化 值 = 弧度 */
+}
+
+
+ QMenu::item:selected {
+
+	 border-radius:5px;				/* 圆角优化 值 = 弧度 */
+	 border: 1px solid white;
+     border-width:1px;
+     border-color: #516589;
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #1E293A,
+                                 stop: 1.0 #2C547E);
+     color:#E6FFFF;
+ }
+
+
+QMenu::icon:checked { /* appearance of a 'checked' icon */
+     background: gray;
+     border: 1px inset gray;
+     position: absolute;
+     top: 1px;
+     right: 1px;
+     bottom: 1px;
+     left: 1px;
+ }
+
+ QMenu::separator {
+     height: 1px;
+     background: #1D99A9;
+     /*margin-left: 10px;*/
+     /*margin-right: 5px;*/
+ }
+
+ QMenu::indicator {
+     width: 13px;
+     height: 13px;
+ }
+
+ /* non-exclusive indicator = check box style indicator (see QActionGroup::setExclusive) */
+ QMenu::indicator:non-exclusive:unchecked {
+     image: url(qss/checkbox_unchecked.png);
+ }
+
+ QMenu::indicator:non-exclusive:unchecked:selected {
+     image: url(qss/checkbox_unchecked_hover.png);
+ }
+
+ QMenu::indicator:non-exclusive:checked {
+     image: url(qss/checkbox_checked.png);
+ }
+
+ QMenu::indicator:non-exclusive:checked:selected {
+     image: url(qss/checkbox_checked_hover.png);
+ }
+
+ /* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
+ QMenu::indicator:exclusive:unchecked {
+     image: url(qss/radiobutton_unchecked.png);
+ }
+
+ QMenu::indicator:exclusive:unchecked:selected {
+     image: url(qss/radiobutton_unchecked_hover.png);
+ }
+
+
+QLabel{
+background:transparent;
+}
+/*
+QCheckBox{
+	border-style: outset;
+	border-width: 1px;
+
+    border: 2px solid back;	
+	border-radius:1px;	
+	padding:2px 4px;
+}
+*/
+
+
+QDialog QPushButton,QDialog QToolButton{
+	min-width:30px;
+	min-height:23px;
+}
+
+QLineEdit{
+	border-style: outset;
+	border-width: 1px;
+
+    border: 2px solid white;		/* 边框 */
+/*	border:groove gray;*/
+	border-radius:10px;				/* 圆角优化 值 = 弧度 */
+	padding:1px 1px;				/* btn 边界大小		*/
+
+}
+QPushButton{
+	border-style: outset;
+	border-width: 1px;
+
+    border: 2px solid white;		/* 边框 */
+/*	border:groove gray;*/
+	border-radius:10px;				/* 圆角优化 值 = 弧度 */
+	padding:0px 0px;				/* btn 边界大小		*/
+}
+
+QPushButton{ color: back;}
+
+QPushButton::hover{background-color:green;}		/*  光标在btn 时为grenn */
+QPushButton::pressed{ background:qlineargradient(x1:0,y1:0.5,x2:1,y2:0.5,
+		stop:0 green,stop:0.5 cyan stop: 1 darkcyan);}
+
+
+
+DailForm QLineEdit#phoneLineEdt{
+	font-size:36px;
+	font-weight: bold;
+}
+
+QComboBox{
+color: rgb(0, 0, 0);
+font: 75 11pt "Bitstream Charter";
+	  border-width: 2px;
+	  background-color: rgb(170, 170, 0);
+	  border-color: rgb(255, 255, 255);
+	  border-style: solid;
+	  border-radius: 5;
+}
+QComboBox:hover{
+
+		  }
+
+QComboBox QAbstractItemView {
+border: 2px solid #32435E;
+		selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+				stop: 0 #506B79,stop: 1.0 #0D95A6);
+background: #80DF20;
+}
+QDoubleSpinBox {
+color: rgb(0, 0, 0);
+font: 75 11pt "Bitstream Charter";
+	  border-width: 2px;
+	  background-color: rgb(170, 170, 0);
+	  border-color: rgb(255, 255, 255);
+	  border-style: solid;
+	  border-radius: 5;
+
+}
+
+
+
